@@ -1,0 +1,23 @@
+body {
+  background-image: url('../images/home-layer-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app-container {
+  max-width: 400px;
+  padding: 70px 100px;
+
+  .players-container {
+    margin-top: 40px;
+  }
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 985px) {
+  .app-container {
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+}
+

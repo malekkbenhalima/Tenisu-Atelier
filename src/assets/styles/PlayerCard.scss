@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format('truetype')
+}
+
+@font-face {
+  font-family: "Mulish-Bold";
+  src: url("../fonts/Mulish/Mulish-Bold.ttf");
+  src: url("../fonts/Mulish/Mulish-Bold.ttf") format('truetype')
+}
+
+:root {
+  /* Brand Color */
+  --primaryColor: #F2753B;
+  --accentColor: #EBAD65;
+  --secondaryColor: rgba(000, 000, 000, 0.3);
+  --shadowPrimary: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  /* Fonts */
+  --fontPrimary: 'Montserrat-Bold', sans-serif;
+  --fontSecondary: 'Mulish-Bold', sans-serif;
+}
+
+.card {
+  display: flex;
+  background: #fff;
+  height: 115px;
+  overflow: hidden;
+  gap: 10px;
+  justify-content: space-around;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-items: center;
+  width: auto;
+  transition: 0.2s transform ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  &:active {
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.11);
+  }
+
+  .card__img {
+    position: relative;
+    width: 130px;
+    height: 100%;
+
+    > img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 10px;
+    }
+  }
+
+  .card__col {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 20px 0;
+
+    .card__col--title {
+      font-family: var(--fontPrimary);
+      color: var(--primaryColor);
+      letter-spacing: 1px;
+    }
+
+    .card__col--body {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .card__col--body__subtitle {
+      font-family: var(--fontSecondary);
+      color: var(--secondaryColor);
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      margin-bottom: 3px;
+    }
+
+    .card__col--body__info {
+      font-family: var(--fontPrimary);
+      color: var(--primaryColor);
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+:root {
+  --inputBgColor: #905931;
+  --inputColor: #ecab68;
+}
+
+input.search-input[type='text'] {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--inputBgColor);
+  color: var(--inputColor);
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  font-family: var(--fontPrimary);
+  font-size: 12px;
+  outline: none;
+
+  &::placeholder {
+    color: var(--inputColor);
+  }
+}

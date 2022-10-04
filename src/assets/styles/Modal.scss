@@ -1,0 +1,17 @@
+.modal-container {
+  max-width: 1190px;
+  margin: 0 auto;
+  overflow-y: scroll;
+
+  .modal-body {
+    outline: none;
+  }
+
+  .modal-close-icon {
+    fill: #fff;
+    font-size: 40px;
+    display: flex;
+    margin: 30px auto;
+    cursor: pointer
+  }
+}
