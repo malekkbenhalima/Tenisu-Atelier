@@ -1,8 +1,6 @@
 
 # Tenisu Front-End
 
-Test technique 
-
 
 ## Demo & Live Website
 
